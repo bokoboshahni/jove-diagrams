@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" modified="2022-06-21T18:29:20.872Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="t5-CIlMnCCkEQBYZhrNz" version="18.0.7" type="github">
-  <diagram id="UPXCaPIzLLvnlWZZlY-7" name="Page-1">
+<mxfile host="app.diagrams.net" modified="2022-06-21T18:33:17.360Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="V0PSzW70TmT3yge6LjdW" version="18.0.7" type="github" pages="2">
+  <diagram id="UPXCaPIzLLvnlWZZlY-7" name="ERD">
     <mxGraphModel dx="2292" dy="1299" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -33,6 +33,14 @@
         </mxCell>
         <mxCell id="CTiRFfsjw4jbH4-1-Eue-1" value="Order" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="280" y="360" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hN_xgh69dox6CCPtmmV4-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;startArrow=ERmandOne;startFill=0;endArrow=ERmandOne;endFill=0;" edge="1" parent="1" source="CTiRFfsjw4jbH4-1-Eue-6" target="hN_xgh69dox6CCPtmmV4-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="420" />
+              <mxPoint x="700" y="1040" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="CTiRFfsjw4jbH4-1-Eue-6" value="Order Item" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="520" y="360" width="160" height="80" as="geometry" />
@@ -273,11 +281,31 @@
         <mxCell id="CTiRFfsjw4jbH4-1-Eue-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;" edge="1" parent="1" source="CTiRFfsjw4jbH4-1-Eue-71" target="CTiRFfsjw4jbH4-1-Eue-74">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="hN_xgh69dox6CCPtmmV4-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;" edge="1" parent="1" source="CTiRFfsjw4jbH4-1-Eue-71" target="hN_xgh69dox6CCPtmmV4-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="CTiRFfsjw4jbH4-1-Eue-71" value="Requisition" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="280" y="1000" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="CTiRFfsjw4jbH4-1-Eue-74" value="Requisition Comment" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="280" y="1120" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hN_xgh69dox6CCPtmmV4-1" value="Requisition Item" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1000" width="160" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="utD-DCyajCzgOs0xMNpY" name="Order Flow (Simple)">
+    <mxGraphModel dx="2076" dy="1104" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6dwrLWzfGCdk8BcrVydT-1" value="Create Order" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="240" y="320" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6dwrLWzfGCdk8BcrVydT-2" value="Requisition is automatically created" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=right;labelPosition=left;pointerEvents=1;fontSize=10;verticalLabelPosition=middle;verticalAlign=middle;spacingLeft=0;spacingRight=12;" vertex="1" parent="1">
+          <mxGeometry x="160" y="320" width="50" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
